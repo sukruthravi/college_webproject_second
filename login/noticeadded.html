@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/pinred-min.png">
+        
+        <title>Notices For ISE Department</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation_checkbox" id="navi"></input>
+
+            <label for="navi" class="navigation_button">
+                <span class="navigation_icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation_background">&nbsp;</div>
+
+            <nav class="navigation_nav">
+                <ul class="navigation_list">
+                    <li class="navigation_item"><a href="index.php" class="navigation_link">home</a></li>
+                    <li class="navigation_item"><a href="all.php" class="navigation_link">All Notices</a></li>
+                    <li class="navigation_item"><a href="notice.html" class="navigation_link">Add new Notice</a></li>
+                    <li class="navigation_item"><a href="imp.php" class="navigation_link">Impotant Notices</a></li>                    
+                    <li class="navigation_item"><a href="cat.php" class="navigation_link">View by category</a></li>
+                    <li class="navigation_item"><a href="vquery.php" class="navigation_link">view queries</a></li>
+                    <li class="navigation_item"><a href="users.html" class="navigation_link">Add Users</a></li>
+                    <li class="navigation_item"><a href="../index.php" class="navigation_link">logout</a></li>
+                
+                </ul>
+            </nav>
+
+        </div>
+
+            <center>
+            <section class="notice-section-book">
+                <div class="row">
+                    <div class="notice-book">
+                        <div class="book_form">
+                            <form action="addnotice.php" class="form" method="POST">
+
+                                    <div class="u-margin-bottom-small">
+                                            <h2 class="heading-secondary">
+                                                  Add notice here
+                                            </h2>
+                                    </div>
+
+                                    <div class="u-margin-bottom-small">
+                                            <h3>
+                                                  Notice added successfully.
+                                            </h3>
+                                    </div>
+
+                                <div class="form_group">
+                                    <input type="text" class="form_input" placeholder="Notice Id" required id="nid" name="nid"></input>
+                                    <label for="nid" class="form_label">Notice Id</label>
+                                </div>
+
+                                <div class="form_group">
+                                    <input type="text" class="form_input" placeholder="Name" required id="name" name="name"></input>
+                                    <label for="name" class="form_label">Name</label>
+                                </div>
+
+                                <div class="form_group">
+                                    <input type="Date" class="form_input" placeholder="Date" required id="ndate" name="ndate"></input>
+                                    <label for="ndate" class="form_label">Date</label>
+                                </div>
+
+                                <div class="form_group">
+                                    <input type="text" class="form_input" placeholder="Title" required id="title" name="title"></input>
+                                    <label for="title" class="form_label">Title</label>
+                                </div>
+
+                                <div class="form_group">
+                                    <input type="text" class="form_input" placeholder="Description" required id="description" name="description"></input>
+                                    <label for="description" class="form_label">Description</label>
+                                </div>
+
+
+                                <div class="form_group u-margin-bottom-small">
+
+                                    <div class="form_radio-group">
+                                        <input type="radio" class="form_radio-input" id="cultural" name="cat" value="cultural">
+                                        <label for="cultural" class="form_radio-label">
+                                                <span class="form_radio-button"></span>
+                                                Cultural</label>
+                                    </div>
+
+                                    <div class="form_radio-group">
+                                        <input type="radio" class="form_radio-input" id="technical" name="cat" value="technical">
+                                        <label for="technical" class="form_radio-label">
+                                            <span class="form_radio-button"></span>
+                                            Technical</label>
+                                    </div>
+
+                                    <div class="form_radio-group">
+                                        <input type="radio" class="form_radio-input" id="academic" name="cat" value="academic">
+                                        <label for="academic" class="form_radio-label">
+                                            <span class="form_radio-button"></span>
+                                            Academic</label>
+                                    </div>
+
+                                    <div class="form_radio-group">
+                                        <input type="radio" class="form_radio-input" id="anaadyanta" name="cat" value="anaadyanta">
+                                        <label for="anaadyanta" class="form_radio-label">
+                                            <span class="form_radio-button"></span>
+                                            Anaadyanta</label>
+                                    </div>
+
+
+                                    <div class="form_radio-group">
+                                        <input type="radio" class="form_radio-input" id="important" name="cat" value="important">
+                                        <label for="important" class="form_radio-label">
+                                            <span class="form_radio-button"></span>
+                                            Important</label>
+                                    </div>
+    
+    
+                                </div>
+
+
+                                <div class="form_group">
+                                    <button class="btn btn-green">Submit &rarr;</button>
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </center>
+
+        </main>
+
+
+
+
+
+
+
+        <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    col-1-of-2
+                </div>
+                <div class="col-1-of-2">
+                    col-1-of-2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    col-1-of-3
+                </div>
+                <div class="col-1-of-3">
+                    col-1-of-3
+                </div>
+                <div class="col-1-of-3">
+                    col-1-of-3
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    col-1-of-3
+                </div>
+                <div class="col-2-of-3">
+                    col-2-of-3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-2-of-4">
+                    col-2-of-4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    col-1-of-4
+                </div>
+                <div class="col-3-of-4">
+                    col-3-of-4
+                </div>
+            </div>
+
+        </section>
+        -->
+
+        
+    </body>
+</html>
+
+
